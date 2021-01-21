@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal">
+        <TableRow
+            android:layout_height="fill_parent"
+            android:layout_width="fill_parent">
+            <ImageView
+                android:id="@+id/image_view"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:padding="6dp"
+                android:scaleType="fitCenter"
+                android:layout_marginRight="20dp"
+                ></ImageView>
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center">
+                <TableRow>
+                    <TextView
+                        android:id="@+id/Brand"
+                        android:text="Brand"
+                        android:textSize="15dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        ></TextView> </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:id="@+id/Product_name"
+                        android:text="ProductName"
+                        android:textSize="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#B2B6C1"
+                        ></TextView>
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:text="$0.00"
+                        android:textSize="10dp"
+                        android:id="@+id/Price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:textColor="#EC453A"
+                        ></TextView>
+                </TableRow>
+            </TableLayout>
+<Button
+    android:layout_height="40dp"
+    android:layout_width="40dp"
+    android:layout_gravity="center"
+    android:text="X"
+    android:id="@+id/remove_item"
+    android:textColor="#D3082F"></Button>
+        </TableRow>
+
+    </TableLayout>
+</LinearLayout>
